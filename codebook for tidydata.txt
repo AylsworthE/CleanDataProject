@@ -1,0 +1,60 @@
+# Codebook for the tidy dataset continated in tidydata.txt
+
+## Identifying variables - group, subject, and activity
+
+  ** group **
+  Two-level factor vector identifying which group subjects and their data were randomly assigned for the experiment presented in (Anguita et al 2012).
+  test - 9 subjects
+  train - 21 subjects
+  
+  ** subject **
+  This is a 30-level factor vector identifying observations from the 30 individuals wore a Samsung Smartphone while performing various activities.
+  
+  ** activity **
+  Six-level factor vector identifying observations corresponding to one of six types of activities:
+  1) walk - Walking
+  2) walkup - Walking upstairs
+  3) walkdown - Walking downstairs
+  4) sit - Sitting
+  5) stand - Standing
+  6) lay - Laying down
+  
+## Measurement variables
+
+The averages of all means and standard deviation pairs by subject and activity type are presented
+
+Only pairs of means and standard deviations from the measurements taken directly from the Samsung Smartphone device are included in the tidydata.txt
+
+Variables preceded with a 't' refer to measurements involving time, and 'f' refers to measurements involving frequency. 
+
+The 'XYZ' of some variables indicates measurements made in three-dimensional space
+
+There is an average mean and standard deviation for each of measurements below, as well as each direction, XYZ, resulting in 66 variables.
+
+For example, tBodyAcc - XRY produces in six variables:
+tBodyAcc-mean()-X _and_ tBodyAcc-std()-X
+tBodyAcc-mean()-Y _and_ tBodyAcc-std()-Y
+tBodyAcc-mean()-Z _and_ tBodyAcc-std()-Z
+
+IN conrast, tBodyAccMag produces only two variables:
+tBodyAccMag-mean() _and_ tBodyAccMag-std()
+
+Here is the list of measurements producing the included variables
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
