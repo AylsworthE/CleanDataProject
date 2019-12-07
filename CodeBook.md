@@ -1,18 +1,18 @@
-# Codebook for the tidy dataset continated in tidydata.txt
+# Codebook for the tidy dataset (tidydata.txt ) produced by the run_analysis.R script
 
-The tidydata.txt file contains the means and standard deviations for 66 measurements taken from 30 unique individuals performing six different physical activities.
+The final output contains the means and standard deviations for 66 measurements taken from 30 unique individuals performing six different physical activities.
 
 ## Identifying variables - group, subject, and activity
 
-  ** group **
+  **group**
   Two-level factor vector identifying which subjects and their data were randomly assigned for the experiment presented in (Anguita et al 2012).
-  test - 9 subjects
-  train - 21 subjects
+  - test - 9 subjects
+  - train - 21 subjects
   
-  ** subject **
+  **subject**
   This is a 30-level factor vector identifying observations from the 30 individuals, aged 19-48, who wore a Samsung Smartphone while performing various activities.
   
-  ** activity **
+  **activity**
   Six-level factor vector identifying observations corresponding to one of six types of activities:
   1) walk - Walking (dynamic activity)
   2) walkup - Walking upstairs (dynamic activity)
@@ -34,14 +34,13 @@ Variables preceded with 'f' are measurements from the gyroscope, measured in rad
 The 'XYZ' of some variables indicates measurements made in three-dimensional space. There is an average mean and standard deviation for each of measurements below, as well as each direction, XYZ, resulting in 66 variables.
 
 For example, tBodyAcc - XRY produces in six variables:
-tBodyAcc-mean()-X _and_ tBodyAcc-std()-X
-tBodyAcc-mean()-Y _and_ tBodyAcc-std()-Y
-tBodyAcc-mean()-Z _and_ tBodyAcc-std()-Z
+* tBodyAcc-mean()-X _and_ tBodyAcc-std()-X
+* tBodyAcc-mean()-Y _and_ tBodyAcc-std()-Y
+* tBodyAcc-mean()-Z _and_ tBodyAcc-std()-Z
 
-IN conrast, tBodyAccMag produces only two variables:
-tBodyAccMag-mean() _and_ tBodyAccMag-std()
+In conrast, tBodyAccMag produces only two variables: tBodyAccMag-mean() _and_ tBodyAccMag-std()
 
-Here is the complete list of measurements producing the variables:
+Here is the complete list of features from the original data that are included as variables in the final dataset:
 
 tBodyAcc-XYZ
 tGravityAcc-XYZ
@@ -63,7 +62,7 @@ fBodyGyroJerkMag
 
 ## Original Data 
 
-The tidydata.txt dataset was produced from a more complete dataset provided publicly [HERE](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+The tidydata.txt dataset was produced from a more extensive dataset provided publicly [HERE](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 A full description of the experiment and explanation of the variables may be found [HERE](http://archive.ics.uci.edu/ml/datasets/Smartphone-Based+Recognition+of+Human+Activities+and+Postural+Transitions)
 
