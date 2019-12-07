@@ -29,7 +29,7 @@ This new file may be read back into R with the following code:
 mydata <- read.table("tidydata.txt", header = TRUE)
 ```
 
-Because many intermediary datasets were created and used in this process, an optional final line of code will remove most of these intermediary and building files, leaving only the complete raw dataset and the final dataset of averages.
+Because many intermediary datasets were created and used in this process, an optional final line of code will remove most of these intermediary and building files, leaving only the complete raw dataset and the final, tidy dataset of averages.
 
 ## About the raw data
 
