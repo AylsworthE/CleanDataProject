@@ -24,6 +24,11 @@ Running this script in R will create a folder in your working directory called "
 4) "melt" and then "cast" this smaller, tidier dataset to calculate unique averages for each variable from each subject performing each activity, and
 5) "write" this dataset of averages of each of the selected variables for each activity and each subject to a new file: tidydata.txt 
 
+This new file may be read back into R with the following code:
+```
+mydata <- read.table("tidydata.txt", header = TRUE)
+```
+
 Because many intermediary datasets were created and used in this process, an optional final line of code will remove most of these intermediary and building files, leaving only the complete raw dataset and the final dataset of averages.
 
 ## About the raw data
