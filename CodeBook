@@ -23,7 +23,7 @@ The tidydata.txt file contains the means and standard deviations for 66 measurem
   
 ## Measurement variables
 
-The averages of all means and standard deviation pairs by subject and activity type are presented
+The averages of all means and standard deviation pairs of measurements (or features) by subject and activity type are presented
 
 Only pairs of means and standard deviations from the measurements taken directly from the accelerometer and the gyroscope on the Samsung Smartphone device are included in the tidydata.txt
 
