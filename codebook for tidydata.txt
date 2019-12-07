@@ -1,35 +1,37 @@
 # Codebook for the tidy dataset continated in tidydata.txt
 
+The tidydata.txt file contains the means and standard deviations for 66 measurements taken from 30 unique individuals performing six different physical activities.
+
 ## Identifying variables - group, subject, and activity
 
   ** group **
-  Two-level factor vector identifying which group subjects and their data were randomly assigned for the experiment presented in (Anguita et al 2012).
+  Two-level factor vector identifying which subjects and their data were randomly assigned for the experiment presented in (Anguita et al 2012).
   test - 9 subjects
   train - 21 subjects
   
   ** subject **
-  This is a 30-level factor vector identifying observations from the 30 individuals wore a Samsung Smartphone while performing various activities.
+  This is a 30-level factor vector identifying observations from the 30 individuals, aged 19-48, who wore a Samsung Smartphone while performing various activities.
   
   ** activity **
   Six-level factor vector identifying observations corresponding to one of six types of activities:
-  1) walk - Walking
-  2) walkup - Walking upstairs
-  3) walkdown - Walking downstairs
-  4) sit - Sitting
-  5) stand - Standing
-  6) lay - Laying down
+  1) walk - Walking (dynamic activity)
+  2) walkup - Walking upstairs (dynamic activity)
+  3) walkdown - Walking downstairs (dynamic activity)
+  4) sit - Sitting (static activity)
+  5) stand - Standing (static activity)
+  6) lay - Laying down (static activity)
   
 ## Measurement variables
 
 The averages of all means and standard deviation pairs by subject and activity type are presented
 
-Only pairs of means and standard deviations from the measurements taken directly from the Samsung Smartphone device are included in the tidydata.txt
+Only pairs of means and standard deviations from the measurements taken directly from the accelerometer and the gyroscope on the Samsung Smartphone device are included in the tidydata.txt
 
-Variables preceded with a 't' refer to measurements involving time, and 'f' refers to measurements involving frequency. 
+Variables preceded with a 't' refer to measurements from the accelerometer, measured in 'g's (gravity of earth -> 9.80665 m/seg2).
 
-The 'XYZ' of some variables indicates measurements made in three-dimensional space
+Variables preceded with 'f' are measurements from the gyroscope, measured in rad/seg. 
 
-There is an average mean and standard deviation for each of measurements below, as well as each direction, XYZ, resulting in 66 variables.
+The 'XYZ' of some variables indicates measurements made in three-dimensional space. There is an average mean and standard deviation for each of measurements below, as well as each direction, XYZ, resulting in 66 variables.
 
 For example, tBodyAcc - XRY produces in six variables:
 tBodyAcc-mean()-X _and_ tBodyAcc-std()-X
@@ -39,7 +41,7 @@ tBodyAcc-mean()-Z _and_ tBodyAcc-std()-Z
 IN conrast, tBodyAccMag produces only two variables:
 tBodyAccMag-mean() _and_ tBodyAccMag-std()
 
-Here is the list of measurements producing the included variables
+Here is the complete list of measurements producing the variables:
 
 tBodyAcc-XYZ
 tGravityAcc-XYZ
@@ -58,3 +60,13 @@ fBodyAccMag
 fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
+
+## Original Data 
+
+The tidydata.txt dataset was produced from a more complete dataset provided publicly [HERE](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+
+A full description of the experiment and explanation of the variables may be found [HERE](http://archive.ics.uci.edu/ml/datasets/Smartphone-Based+Recognition+of+Human+Activities+and+Postural+Transitions)
+
+## CITATION FOR ORIGINAL DATA
+
+Jorge-L. Reyes-Ortiz, Luca Oneto, Albert SamÃ , Xavier Parra, Davide Anguita. Transition-Aware Human Activity Recognition Using Smartphones. Neurocomputing. Springer 2015.
